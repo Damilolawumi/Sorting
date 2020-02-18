@@ -2,7 +2,7 @@
 def selection_sort( arr ):
     # loop through n-1 elements
 
-    for i in range(0, len(arr) - 1):
+    for i in range(0, len(arr) - 1):#-1 is saying once its remaining one item in the unsorted list it should assume thts the highest number
         cur_index = i
         smallest_index = cur_index
         # TO-DO: find next smallest element
@@ -15,7 +15,8 @@ def selection_sort( arr ):
 
         # TO-DO: swap
         if smallest_index != i:
-            #swap number at curr index for number at smalest index
+            # Swap the found minimum element with  
+            # the first element 
           arr[smallest_index], arr[i] = arr[i], arr[smallest_index]
 
     return arr
@@ -31,7 +32,7 @@ def bubble_sort( arr ):
       for i in range(0, indexing_length):
         if arr[i] > arr[i+1]: #if item to the left is > than item to the right
           sorted = False
-          arr[i], arr[i+1] = arr[i+1], arr[i] #we flip the position
+           
 
     return arr
 
